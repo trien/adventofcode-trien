@@ -1,5 +1,5 @@
 //https://adventofcode.com/2021
-`149
+const data = `149
 163
 165
 160
@@ -2004,7 +2004,7 @@
 (() => {
     console.info('Day 1-2')
     let largerMeasurements = 0
-    temp1.reduce((prev, current) => {
+    data.reduce((prev, current) => {
         if (prev < current) largerMeasurements++
         return current
     }, 0)
@@ -2017,7 +2017,7 @@
     let largerMeasurements = 0
     let prevSet = []
     let currSet = []
-    temp1.reduce((prev, current) => {
+    data.reduce((prev, current) => {
         if (currSet.length < 3) {
              currSet.push(current)
             return current
